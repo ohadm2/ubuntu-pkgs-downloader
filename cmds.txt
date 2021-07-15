@@ -1,0 +1,5 @@
+
+docker build -t ubuntu-pkgs-downloader:1.0 path/to/Dockerfile
+
+docker run --name=ubuntu-pkgs-downloader --rm -v /home/devuser/projects/ubuntu-pkgs-downloader/pkgs:/pkgs ubuntu-pkgs-downloader:1.0 open-vm-tools
+
