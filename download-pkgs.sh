@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get --allow-insecure-repositories update
+
 FOLDER_TO_WORK_ON=pkgs
 
 # we will check if the given param is not empty only for the 1st param so that we won't get an error about too many params when a list is given

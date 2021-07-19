@@ -30,7 +30,7 @@ if [ -d "$FOLDER_TO_WORK_ON" ]; then
 			fi
 		done
 
-		ls -l $SCRIPT_LOC/$ARCHIVES_DIR
+		ls -lh $SCRIPT_LOC/$ARCHIVES_DIR
 	else
 		echo "No folders found. Nothing to do. Exiting..."
 	fi
