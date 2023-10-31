@@ -15,7 +15,7 @@ if ! [ "$1" == "" ]; then
  
 		mkdir -p /$FOLDER_TO_WORK_ON/$PKG_DIR
 	
-		apt-get install --allow-unauthenticated -y --download-only -o Dir::Cache::archives="/$FOLDER_TO_WORK_ON/$PKG_DIR" -o Dir::Cache="/tmp/" $i
+		apt-get download --allow-unauthenticated -y --download-only -o Dir::Cache::archives="/$FOLDER_TO_WORK_ON/$PKG_DIR" -o Dir::Cache="/tmp/" $i
 	done
 else
 	echo "Error! Wrong usage."
